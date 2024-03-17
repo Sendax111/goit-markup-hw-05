@@ -793,10 +793,8 @@ footer>.container {
 
 .subscribe-icon {
     margin-left: 16px;
-    fill: #ffffff;
 }
-.modal-checkbox-input:checked+.checkbox-label>.modal-checkbox-icon-wrapper {
-    background-color: var(#404bbf);
-    border: none;
-    fill:#F4F4FD;
+.subscribe-icon:hover,
+.subscribe-icon:focus {
+    fill: #ffffff
 }
