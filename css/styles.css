@@ -768,10 +768,7 @@ footer>.container {
     margin-left: 16px;
 }
 
-.close-button:hover .cross-icon,
-.close-button:focus .cross-icon {
-    fill: #ffffff;
-}
+
 .backdrop {
     position: fixed;
     top: 0;
