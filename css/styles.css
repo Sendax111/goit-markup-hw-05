@@ -817,9 +817,7 @@ footer>.container {
     fill: #ffffff;
 }
 .modal-checkbox-input:checked+.checkbox-label>.modal-checkbox-icon-wrapper {
-    background-color: var(--primary-color);
-    /* Используйте свою CSS переменную */
+    background-color: #404bbf;
     border: none;
-    fill: var(--icon-color);
-    /* Используйте свою CSS переменную */
+    fill:#F4F4FD;
 }
