@@ -416,7 +416,7 @@ header .container {
     display: block;
     min-width: 169px;
     height: 56px;
-    
+    background-color: #e7e9fc
     border: none;
     margin: 0 auto;
     border-radius: 4px;
