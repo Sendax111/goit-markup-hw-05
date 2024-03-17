@@ -790,3 +790,8 @@ footer>.container {
 .subscribe-icon {
     margin-left: 16px;
 }
+
+.close-button:hover .cross-icon,
+.close-button:focus .cross-icon {
+    fill: #ffffff;
+}
