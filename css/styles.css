@@ -52,8 +52,8 @@ button {
 }
 
 span {
-    color: #2e2f42;
     display: inline-flex;
+    color: #2e2f42;
 }
 
 .modal-checkbox-input:checked+.checkbox-label>.modal-checkbox-icon-wrapper {
