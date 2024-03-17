@@ -416,7 +416,7 @@ header .container {
     display: block;
     min-width: 169px;
     height: 56px;
-    background-color: #4d5ae5;
+    
     border: none;
     margin: 0 auto;
     border-radius: 4px;
@@ -790,7 +790,8 @@ footer>.container {
     fill: #ffffff;
 }
 .modal-form-subscription-btn:hover {
-    
+    border: none;
+    background-color: #404bbf;
 }
 .modal-form-subscription-btn:focus {
 background-color: #404bbf;
