@@ -366,40 +366,52 @@ header .container {
     fill: #4d5ae5;
 }
 
-.modal-checkbox-wrapper {
-    display: inline-flex;
-    margin-bottom: 24px;
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.checkbox-label {
-    position: relative;
-    padding-left: 24px;
+.form-privacy {
+    display: block;
+    margin-bottom: 24px;
+    user-select: none;
+}
+.form-privacy-user {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-
-.modal-checkbox-icon-wrapper {
+.form-privacy-checkbox {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 16px;
     height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    justify-content: center;
-    align-items: center;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     fill: transparent;
-    position: absolute;
-    top: -2px;
-    left: 0px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-checkbox-link {
-    line-height: 1.33;
-    text-decoration: underline;
+.form-privacy-link {
     color: #4d5ae5;
+    text-decoration-line: underline;
 }
 
 .modal-form-subscription-btn {
@@ -419,11 +431,18 @@ header .container {
     color: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-subscription-btn:hover,
-.modal-form-subscription-btn:focus {
+.checkbox:checked+.form-privacy-user>.form-privacy-checkbox {
     background-color: #404bbf;
     border: none;
+    fill: #f4f4fd;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.checkbox:focus+.form-privacy-user>.form-privacy-checkbox {
+    border-color: #4d5ae5;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .text-benefits {
     display: flex;
     gap: 24px;
